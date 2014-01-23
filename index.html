@@ -22,7 +22,8 @@
     <script>
 	document.addEventListener("deviceready", onDeviceReady, false);
 		$(function() {
-			
+			$.support.cors = true; 
+			$.mobile.allowCrossDomainPages =true;
 			$( "[data-role='navbar']" ).navbar();
 			$( "[data-role='header'], [data-role='footer']" ).toolbar();
 		});
@@ -46,7 +47,7 @@
 		});
 		
 		function onDeviceReady() {
-    jQuery.support.cors = true; 
+    
     
   }
 	</script>
