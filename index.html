@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navbar - jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="demos/favicon.ico">
+   <link rel="stylesheet" type="text/css" href="js/jqm-datebox.min.css">
+	<link rel="stylesheet" href="jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="js/style.css">
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.4.0.min.js"></script>
+    <script type="text/javascript" src="js/jqm-datebox.core.min.js"></script>
+<script type="text/javascript" src="js/jqm-datebox.mode.calbox.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.mobile.datebox.i18n.es_ES.utf8.js"></script>
+<script type="text/javascript" src="js/jquery.sha256.js"></script>
+<script type="text/javascript" src="js/jquery.damehora.disponibilidad.js"></script>
+<script type="text/javascript" src="js/jquery.damehora.disponibilidadhoras.js"></script>
+
+    <script src="js/funciones.js"></script>
+    <script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+		$(function() {
+			
+			$( "[data-role='navbar']" ).navbar();
+			$( "[data-role='header'], [data-role='footer']" ).toolbar();
+		});
+		// Update the contents of the toolbars
+		$( document ).on( "pageshow", "[data-role='page']", function() {
+			// Each of the four pages in this demo has a data-title attribute
+			// which value is equal to the text of the nav button
+			// For example, on first page: <div data-role="page" data-title="Info">
+			
+			var current = $( this ).jqmData( "title" );
+			// Change the heading
+			
+			// Remove active class from nav buttons
+			$( "[data-role='navbar'] a.ui-btn-active" ).removeClass( "ui-btn-active" );
+			// Add active class to current nav button
+			$( "[data-role='navbar'] a" ).each(function() {
+				if ( $( this ).text() === current ) {
+					$( this ).addClass( "ui-btn-active" );
+				}
+			});
+		});
+		
+		function onDeviceReady() {
+    jQuery.support.cors = true; 
+    
+  }
+	</script>
+    <script type="text/javascript">
+  
+
+  
+</script>
+</head>
+<body>    	
+<div data-role="header" data-position="fixed" role="heading" data-theme="a" >
+             <div data-role="navbar" data-iconpos="left">
+                <ul>
+                    <li><a href="#inicio" data-transition="none" class="ui-nodisc-icon" data-icon="damehoralogo" data-iconshadow="false">Inicio</a></li>
+                    <li><a href="#reservas" data-transition="slide"  data-icon="calendariologo">Reservas</a></li>
+                    <li><a href="#cuenta" data-transition="fade"  data-icon="micuentalogo">Cuenta</a></li>
+                </ul>
+</div>
+</div>
+<div id="inicio" data-role="page" data-title="Inicio">
+
+        
+        
+        <div data-role="content" role="main">
+        	<div id="misofertas"></div>
+        </div>
+    </div>
+    
+    
+    <!--PAGINA DE RESERVAS-->
+    
+    <div id="reservas" data-role="page" data-title="Reservas">
+  	
+        
+       <div class="contenido" data-role="content" role="main">
+    	<div class="servicios">
+        	<div class="numero">1</div>
+        	<h3 class="tit_seleccion" id="serv">Servicios</h3>
+        	<div id="seleccioneidServ" class="seleccione"></div>
+           <div id="seleccionadoServ" class="seleccionado"></div>
+                    
+        	<div class="add ">
+            <select name="selecservicio" id="selecservicio">
+            	<option value="">Añadir más servicios</option>
+                					 	
+                  		
+					                      
+				    				
+			</select>
+            	
+            </div>
+        
+        </div>
+    <div class="servicios no_activo">
+        	<div class="numero">2</div>
+        	<h3 class="tit_seleccion">Profesional</h3>
+        	<div id="seleccioneidPro" class="seleccione"></div>
+            <div id="seleccionadoPro" class="seleccionado"></div>
+        	<div class="add no_visible">Seleccionar profesional
+            	<select name="selecprofesional" id="selecprofesional">
+            	 	<option value="">Seleccionar profesional</option>
+                    					 	
+                  		
+				    				</select>
+            </div>
+        
+        </div>
+    <div class="servicios no_activo">
+        	<div class="numero">3</div>
+        		<h3 class="tit_seleccion">Fecha de reserva</h3>
+           	 <div id="seleccionefecha" class="seleccione"></div>
+           	 <div class="add calend no_visible">
+        			<div class="calendario">
+                    	<label for="mydate">Seleccione un día</label>
+						<input class="ui-body-ca" name="mydate" id="mydate" type="date" data-role="datebox" data-theme="b" data-options="{&quot;mode&quot;: &quot;calbox&quot;, &quot;calControlGroup&quot;: true,&quot;themeHeader&quot;:&quot;b&quot;,&quot;themeInput&quot;:&quot;b&quot;,&quot;themeButton&quot;:&quot;b&quot;,
+                          &quot;themeDateToday&quot;:&quot;b&quot;,
+                          &quot;themeDayHigh&quot;:&quot;b&quot;,
+                          &quot;themeDatePick&quot;:&quot;b&quot;,
+                          &quot;themeDateHigh&quot;:&quot;b&quot;,
+                          &quot;themeDateHighAlt&quot;:&quot;b&quot;,
+                          &quot;themeDate&quot;:&quot;b&quot;,
+                          &quot;overrideCalStartDay&quot;:1,
+                          &quot;calHighToday&quot;:false,
+                          &quot;calHighPick&quot;:true}">
+                    	<label for="mydate">Seleccione la hora</label>
+            
+         
+              <div class="h no_visible" id="mydate1"></div>      
+             <div class="horasminutos">
+            	<select class="sele" name="selechora" id="selechora">
+                	<option value="--">--</option>
+            	 	<option value="08">08</option>
+                 	<option value="09">09</option>			 	
+					<option value="10">10</option>  
+                    <option value="11">11</option>                   
+					<option value="12">12</option>
+               	 	<option value="13">13</option>
+                	<option value="14">14</option>
+                	<option value="15">15</option>
+                	<option value="16">16</option>
+                	<option value="17">17</option>
+                	<option value="18">18</option>
+                	<option value="19">19</option>
+                
+  				</select>
+                </div>
+                 <div class="horasminutos">
+                  <select class="sele" name="selecminutos" id="selecminutos">
+					<option value="--">--</option>																		                    <option value="00">00</option>
+                 	<option value="10">10</option>			 	
+					<option value="20">20</option>  
+                    <option value="30">30</option>                   
+					<option value="40">40</option>
+               	 	<option value="50">50</option>
+                	                
+  				</select>
+                </div>
+                          
+		    </div>
+           			
+           			 <div class="boton reservar">Reservar</div>
+             		
+        	</div>
+            
+       
+     		<div class="edit no_visible">
+        			
+           			 <div class="boton cancelar">Cancelar</div>
+           			 
+             		<div class="boton confirmar">Confirmar</div>
+        	</div>
+     <div class="ups no_visible">
+        			
+           			 <p>Ups!! Lo sentimos pero no hay disponibilidad en la hora y fecha marcados. Escoge la opción adecuada para buscar disponibilidad</p>
+           			<fieldset data-role="controlgroup">
+                     <input id="reserv-1" type="radio" name="reserv" value="days">
+                     <label for="reserv-1">Buscar hora en otro día</label>
+                      <input id="reserv-2" type="radio" name="reserv" value="hours">
+                      <label for="reserv-2">Seleccionar otra hora el mismo día</label>
+                      </fieldset>
+                      <div class="disponibilidad"></div>
+      </div>
+    </div>
+</div>
+    </div>
+    
+    <!--PAGINA DE MI CUENTA-->
+    
+    <div id="cuenta" data-role="page" role="main" data-title="Cuenta">
+
+        
+        <div data-role="content">
+    <div class="proximacita ad no_visible">
+          	<div class="registro">Próxima cita</div>
+            <div class="proxresev">No hay proxima reservas</div>
+    	<div class="btns">       
+          	<div class="boton hcitas">Histórico de citas</div>
+            <div class="boton mdatos">Mis datos</div>
+            <div class="boton atras1">Atrás</div>
+   		 </div>  
+    </div>
+    <div class="reg ad">
+    	<div class="registro">Ya estoy registrado</div>
+        <input id="email" type="text" name="email" value="" placeholder="e-mail">
+        <input id="contrase" type="password" name="contraseña" value="" placeholder="contraseña">
+        <div class="entrar">Entrar</div>
+        <div class="registro">Aún no estoy registrado</div>
+        
+          <div class="crear">Crear cuenta peluquería</div>
+    </div>    
+    <div class="cuenta ad no_visible">
+    	<div class="registro">Registrarme como cliente</div>
+         	 <input id="nombre1" type="text" name="nombre" value="" placeholder="nombre">
+        	<input id="apellidos1" type="text" name="apellidos" value="" placeholder="Apellidos">
+         	<input id="tfno1" type="text" name="tfno" value="" placeholder="telefono">
+            <input id="mail1" type="text" name="mail" value="" placeholder="e-mail">
+        	<input id="contrase1" type="text" name="contraseña" value="" placeholder="contraseña">
+            <div class="boton registrarse">Registrarse</div>
+    		 <div class="boton atras2">Atrás</div>
+    </div>  
+    
+     <div class="misdatos ad no_visible">
+          	<div class="registro">Registrarme como cliente</div>
+         	 <input id="nombre" type="text" name="nombre">
+        	<input id="apellidos" type="text" name="apellidos">
+         	<input id="tfno" type="text" name="tfno">
+            <input id="mail" type="text" name="mail">
+        	<input id="contrasena" type="password" name="contraseña">
+            <div class="boton modificar">Modificar</div>
+            <div class="boton atras3">Atrás</div>
+           
+    </div>
+     <div class="mihistorico no_visible">
+     	<div class="mihistoric"></div>
+      	<div class="boton atras4">Atrás</div>     	
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>

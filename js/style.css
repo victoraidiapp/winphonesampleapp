@@ -1,0 +1,342 @@
+/*
+Theme Name: damehoramobile
+Theme URI: http://smthemes.com/divan/
+Author: The Smart Magazine Themes
+Author URI: http://smthemes.com/
+Description: Template by SMThemes.com
+Version: 2.0
+License: Creative Commons 3.0
+Theme date: 09/27/2013
+License URI: license.txt
+Tags: black, green, dark, fixed-width, featured-images, custom-menu, translation-ready, threaded-comments, theme-options
+*/
+@charset "utf-8";
+/* CSS Document */
+
+.oferta{
+	both:clear;
+	min-height:200px;
+}
+.oferta img{
+	float:left;}
+.img_oferta{
+	float:left;
+	width:100px;
+	height:100px;
+}
+.tit_oferta{
+	margin-left: 125px;
+	color: #63a1ce;	
+}
+.content_oferta p{
+	margin-left:125px;
+	
+}
+
+.numero{
+	text-align:center;
+	padding: 5px;
+	float: left;
+	height: 25px;
+	width: 15px;
+	margin-right: 15px;
+
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #63a1ce;
+	border-right-color: #63a1ce;
+	border-bottom-color: #63a1ce;
+	border-left-color: #63a1ce;
+	border-radius:5px;
+	color: #000;
+	background-color: #63a1ce;
+	text-shadow:none;
+	
+}
+h3.tit_seleccion{
+	margin-right: 0px;
+	margin-bottom: -5px;
+	margin-left: 0px;
+	padding: 0px;
+	line-height: 2;
+	color: #71a2f8;
+	font-weight: lighter;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
+	border-bottom-color: #63a1ce;
+}
+.seleccione{
+	margin-left: 40px;
+	padding-top:20px;
+	
+	
+}
+.seleccionado{
+	padding-top:10px;
+	margin-left:45px;
+}
+.add{
+	margin-top: 15px;
+	margin-left:80px;
+	font-size: small;	
+}
+.list_servicios{
+	
+	list-style-type: none;	
+}
+.registro{
+	color: #63a1ce;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #63a1ce;
+	clear: both;	
+}
+.editando{
+	color: #999;	
+}
+.entrar{
+	cursor:pointer;
+	text-align:center;
+	padding: 5px;
+	height: 25px;
+	width: 100px;
+	float: right;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #63a1ce;
+	border-right-color: #63a1ce;
+	border-bottom-color: #63a1ce;
+	border-left-color: #63a1ce;
+	border-radius:5px;
+	color: #000;
+	background-color: #63a1ce;
+	text-shadow:none;
+}
+.identificar{
+	color: #000;
+	background-color: #999;
+	text-align: center;
+	float: left;
+	height: 40px;
+	width: 300px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	line-height:2;	
+	text-shadow:none;
+}
+.crear{
+	text-align:center;
+	padding: 5px;
+	height: 25px;
+	margin-top:20px;
+	clear:both;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #63a1ce;
+	border-right-color: #63a1ce;
+	border-bottom-color: #63a1ce;
+	border-left-color: #63a1ce;
+	border-radius:5px;
+	color: #000;
+	background-color: #63a1ce;
+	text-shadow:none;
+	
+}
+.center-wrapper {
+    text-align: center;
+    
+    margin:0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    align:center;
+    text-align:center;
+}
+.ui-icon-damehoralogo:after{
+	background-image: url(../images/icons-png/icono_mipelu_cuadrado.png)!important;
+	width: 36px!important;
+	height: 36px!important;position: absolute;
+	background-color: transparent!important;
+	top: 10px!important;
+	margin-top: -9px;
+}
+
+.ui-icon-calendariologo:after{
+	background-image: url(../images/icons-png/icono_calendario.png);
+	background-color:transparent!important;
+	width: 36px!important;
+	height: 36px!important;
+	position: absolute;
+	top: 10px!important;
+	margin-top: -9px;
+}
+.ui-icon-micuentalogo:after{
+	background-image: url(../images/icons-png/icon_myaccount.png);	
+		width:36px!important;
+	height:36px!important;
+	position: absolute;
+	top: 10px!important;
+	background-color:transparent!important;
+	margin-top: -9px;
+}
+
+
+.imagenes{
+	float:left;
+	margin-right:10px;
+}
+.titut{
+	font-weight: bold;
+	color: #63a1ce;	
+}
+.boton.reservar{
+	width: 200px;
+	clear: both;
+}
+.boton{
+	cursor:pointer;
+	text-align:center;
+	padding: 5px;
+	height: 25px;
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #63a1ce;
+	border-right-color: #63a1ce;
+	border-bottom-color: #63a1ce;
+	border-left-color: #63a1ce;
+	border-radius:5px;
+	color: #000;
+	background-color: #63a1ce;
+	text-shadow:none;
+}
+
+
+
+.proxresev{
+	margin-top: 10px;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #63a1ce;	
+}
+.no_visible{
+	display:none;
+}
+.no_activo{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	
+}
+#seleccioneidServ{
+	display:none;
+}
+#seleccioneidPro{
+	display:none;
+}
+.cancelar{
+	float:left;
+	margin-left:20px;
+}
+.editar{
+	float:left;
+	margin-left:20px;
+}
+.confirmar{
+	float:left;
+	margin-left:20px;
+}
+p{
+	color: #039;
+}
+.btn{
+	clear:both;
+	height: 20px;
+	width: 20px;
+	background-repeat: no-repeat;
+}
+.atras{
+	float: left;
+	background-image: url(images/atras.png);
+	margin-bottom:10px;
+	width:10%;
+		}
+.adelante{
+	float:right;
+	background-image: url(images/adelante.png);
+	margin-bottom:10px;
+	width:10%;
+	clear:none;
+
+}
+table{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 70%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #039;
+	float: left;
+	
+}
+td{
+	text-align: center;	
+}
+.hDisponible{
+	float: left;
+	margin-left: 45px;
+	
+}
+.mishoras{
+	clear:both;
+}
+.ups{
+	margin-left:45px;
+	color:#000;
+}
+
+.inp{
+	margin-left:60px;
+}
+p{
+	color:#000;
+}
+.disp{
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+}
+.sele{
+	
+	width: 30px;	
+}
+.horasminutos{
+	width: 100px;	
+	float: left;
+}
+.derecha{
+	float:right;
+}
+.mihistoric{
+	min-height:50px;
+}
+.proxresev{
+	min-height:75px;
+}
+.cancelarr {
+	
+	margin-left: 0px!important;
+	float: none!important;
+}
