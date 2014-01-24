@@ -12,8 +12,8 @@ var fech={dia:null,hora:null};
 })*/
 	
 jQuery(document).ready(function(e) {
-jQuery( "[data-role='navbar']" ).navbar();
-jQuery( "[data-role='header'], [data-role='footer']" ).toolbar();
+//jQuery( "[data-role='navbar']" ).navbar();
+//jQuery( "[data-role='header'], [data-role='footer']" ).toolbar();
 //COPIAMOS LA RESERVA ORIGINAL
 servicio1=jQuery('#selecservicio').html();
 servicio2=jQuery('#selecprofesional').html();

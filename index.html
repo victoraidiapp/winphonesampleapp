@@ -25,8 +25,9 @@
 		$(function() {
 			$.support.cors = true; 
 			$.mobile.allowCrossDomainPages =true;
+			$( "[data-role='header'], [data-role='footer']" ).toolbar({position:'fixed'});
 			$( "[data-role='navbar']" ).navbar();
-			$( "[data-role='header'], [data-role='footer']" ).toolbar();
+			
 		});
 		// Update the contents of the toolbars
 		$( document ).on( "pageshow", "[data-role='page']", function() {
@@ -62,8 +63,8 @@
 <div data-role="header" data-position="fixed" role="heading" data-theme="a" style="-ms-touch-action: none;">
              <div data-role="navbar" data-iconpos="left">
                 <ul>
-                    <li><a href="#inicio" data-transition="none" class="ui-nodisc-icon" data-icon="damehoralogo" data-iconshadow="false">Inicio</a></li>
-                    <li><a href="#reservas" data-transition="slide"  data-icon="calendariologo">Reservas</a></li>
+                    <li><a href="#inicio" data-transition="fade" class="ui-nodisc-icon" data-icon="damehoralogo" data-iconshadow="false">Inicio</a></li>
+                    <li><a href="#reservas" data-transition="fade"  data-icon="calendariologo">Reservas</a></li>
                     <li><a href="#cuenta" data-transition="fade"  data-icon="micuentalogo">Cuenta</a></li>
                 </ul>
 </div>
