@@ -261,7 +261,9 @@ actualizarOfertas();
 		jQuery.mobile.silentScroll(jQuery(this).parent(".servicios").offset().top);
 event.preventDefault();
 	});
-	
+	jQuery("h3.tit_seleccion").on('mouseup',function(event){
+		event.preventDefault();
+	})
 		
 	
 	jQuery(".atras3").on('tap',function(){
