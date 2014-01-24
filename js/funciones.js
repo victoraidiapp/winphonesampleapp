@@ -7,6 +7,9 @@ var times;
 var user={email:null,pass:null};
 var fech={dia:null,hora:null};
 
+/*document.addEventListener('mousedown',function(e){
+	
+})*/
 	
 jQuery(document).ready(function(e) {
 jQuery( "[data-role='navbar']" ).navbar();
@@ -246,9 +249,9 @@ actualizarOfertas();
 	});
 	
 	
+
 	
-	
-	jQuery("h3.tit_seleccion").on('tap',function(){
+	jQuery("h3.tit_seleccion").on('mousedown',function(){
 		jQuery(this).parent(".servicios").find(".ui-input-datebox").removeClass();
 		jQuery(this).parents(".contenido").children(".servicios").addClass('no_activo');
 		jQuery(this).parents(".contenido").find(".add").addClass('no_visible');
