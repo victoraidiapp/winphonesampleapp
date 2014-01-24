@@ -15,9 +15,10 @@ jQuery(document).ready(function(e) {
 //jQuery( "[data-role='navbar']" ).navbar();
 //jQuery( "[data-role='header'], [data-role='footer']" ).toolbar();
 //COPIAMOS LA RESERVA ORIGINAL
-alert("Queremos hacer algunas cosas en el document ready "+$("#cabecera").html());
-			$( "[data-role='header'], [data-role='footer']" ).toolbar({position:'fixed'});
+//alert("Queremos hacer algunas cosas en el document ready "+$("#cabecera").html());
+			//$( "[data-role='header'], [data-role='footer']" ).toolbar({position:'fixed'});
 			$( "[data-role='navbar']" ).navbar();
+			$( "[data-role='header'], [data-role='footer']" ).toolbar();
 servicio1=jQuery('#selecservicio').html();
 servicio2=jQuery('#selecprofesional').html();
 servicio3=jQuery('.calendario').html();
