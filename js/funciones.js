@@ -251,14 +251,15 @@ actualizarOfertas();
 	
 
 	
-	jQuery("h3.tit_seleccion").on('mousedown',function(){
+	jQuery("h3.tit_seleccion").on('mousedown',function(event){
+		
 		jQuery(this).parent(".servicios").find(".ui-input-datebox").removeClass();
 		jQuery(this).parents(".contenido").children(".servicios").addClass('no_activo');
 		jQuery(this).parents(".contenido").find(".add").addClass('no_visible');
 		jQuery(this).parent(".servicios").removeClass('no_activo');
 		jQuery(this).parent(".servicios").children(".add").removeClass('no_visible');
 		jQuery.mobile.silentScroll(jQuery(this).parent(".servicios").offset().top);
-
+event.preventDefault();
 	});
 	
 		
